@@ -1,0 +1,31 @@
+<title>Reddit flair detection</title>
+	 	
+	 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div class="container">
+<form action="" method="post" role="form">
+    <br>
+	<div class="form-group">
+	    <label for="name">URL :</label>
+		<input type="text" class="form-control" id="name" name="name" placeholder="  Enter Reddit submission URL">
+	</div>
+	<button type="submit" class="btn btn-success">Submit</button>
+</form>
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+
+		{% for message in messages %}
+			
+			<div class="alert alert-info">
+				<strong> FLAIR |  </strong> {{ message }}
+			</div>
+
+		{% endfor %}
+	{% endif %}
+{% endwith %}
+
+</div>
