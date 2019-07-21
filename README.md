@@ -42,3 +42,12 @@ Just follow the below steps in order to run this web app offline on your compute
 
 Here you go, the application is running on your terminal. <br>
 Just open the displayed URL (on terminal) on your web browser.
+
+# love BROWNIES !!!!
+ I have also done some data analysis on reddit/India submissions posted from June 1st 2018 to October 1st 2018; which can be found at the above mentioned link - https://flairofreddit.herokuapp.com
+ 
+ <img width="1440" alt="Screenshot 2019-07-21 at 8 47 24 PM" src="https://user-images.githubusercontent.com/43913398/61593090-ca8d2e80-abf8-11e9-8682-f3c585985b19.png">
+ <img width="1440" alt="Screenshot 2019-07-21 at 8 49 23 PM" src="https://user-images.githubusercontent.com/43913398/61593110-0aecac80-abf9-11e9-8bc1-139ccf8c6c60.png">
+ 
+ and more can be seen @ https://flairofreddit.herokuapp.com
+
