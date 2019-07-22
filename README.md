@@ -51,6 +51,17 @@ Just open the displayed URL (on terminal) on your web browser.
  
  and more can be seen @ https://flairofreddit.herokuapp.com
 
+# DATABASE
+
+I have scrapped 2 databases - <br>
+1. for DATA ANALYSIS - (4 months - from June 1st 2018 to October 1st 2018) containing a lot of fields like No_of_comments, timestamp, upvotes, etc.
+2. for TRAINING & TESTING - (1 year - from June 1st 2018 to July 17st 2019) containg only Title, Body and flair.
+
+URL of databases - 
+1. <Strong> Mongodb (.json & .bson) </Strong> - <a href="https://github.com/Himanshu-Garg/Reddit-flair-detection/tree/master/other/mongodb%20database"> here </a>
+2. <Strong> .csv file </Strong> - <a href="https://github.com/Himanshu-Garg/Reddit-flair-detection/tree/master/other/extracted_data"> here </a>
+
+
 # Files STRUCTURE
 
 Brief description of role of each file in the repo.
