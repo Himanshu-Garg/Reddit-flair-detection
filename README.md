@@ -98,6 +98,49 @@ Brief description of role of each file in the repo.
 </ul>
 
 
+# APPROACH that I have followed...
+
+I have finally used "TITLE" field only to predict the flair as, Body is not available in more than 50% posts (as shown in data analysis) and a lot of times, comments can be misleading and diverting, which can reduce the accuracy of the model.
+
+I have trained the model on basically 4 algo - <Strong> Linear SVM, Logistic regression, Random forest classifier,  Multinomial NAIVE- BAYES </Strong> whose accuracy results are given below. I am using CountVector with TFIDF.
+
+<Strong> NOTE - </Strong> For other factors like F1 score, Recall, Confusion Matrix, etc can be viewed from the respective .ipynb files.
+
+<ul>
+<li>accuracy for <Strong> TITLE only </Strong>
+ <ol>
+    <li>Linear SVM - 58.27%</li>
+    <li>Random forest classifier - 56.29%</li>
+    <li>Multinomial NAIVE- BAYES - 54.25% </li></ol></li>
+<li>accuracy for <Strong> TITLE only </Strong> (WITH UNDERSAMPLING) 
+  <ol>
+    <li>Linear SVM - 48.38%</li>
+    <li>Random forest classifier - 44.71%</li>
+    <li>Multinomial NAIVE- BAYES - 56.69%</li> </ol></li>
+</ul>
+
+<br>
+
+<ul>
+<li>accuracy for <Strong> TITLE+BODY  </Strong>
+ <ol>
+    <li>Linear SVM - 58.27%</li>
+    <li>Random forest classifier - 56.05%</li>
+    <li>Logistic regression - 61%</li>
+    <li>Multinomial NAIVE- BAYES - 55.61% </li></ol></li>
+<li>accuracy for <Strong> TITLE+BODY </Strong> (WITH UNDERSAMPLING) 
+  <ol>
+    <li>Linear SVM - 49.2%</li>
+    <li>Random forest classifier - 44.35%</li>
+    <li>Logistic regression - 55.97%</li>
+    <li>Multinomial NAIVE- BAYES - 55.97%</li> </ol></li>
+</ul>
 
 
+<Strong><i> 
+Since, in unbalanced data, only Accuracy cannot be a factor to decide the best model. <br>
+ So, after looking at F1 score and confusion matrix, Linear SVM (Title only - NO undersampling) model has been finalized and used in the website.
+</Strong></i> 
 
+Here are some of the manually tested data on the final model.
+<img width="1029" alt="Screenshot 2019-07-22 at 3 25 08 PM" src="https://user-images.githubusercontent.com/43913398/61625238-d976ee00-ac97-11e9-9f5f-d94137d8e0fc.png">
