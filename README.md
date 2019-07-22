@@ -51,3 +51,42 @@ Just open the displayed URL (on terminal) on your web browser.
  
  and more can be seen @ https://flairofreddit.herokuapp.com
 
+# Files STRUCTURE
+
+Brief description of role of each file in the repo.
+<ul>
+ <li> <Strong> Other </Strong> 
+    <ol>
+      <li><Strong> Extracted_data - </Strong> contains .csv file of the extracted data (data.csv - 4 months data, original_1_year_data.csv - 1 year data)</li>
+      <li><Strong> images - </Strong> contains images of data analysis made using "data analysis.ipynb"</li>
+      <li><Strong> models - </Strong> contains saved models and vectors</li>
+      <li><Strong> mongodb database - </Strong> contains mongodb database (.json and .bson) of extracted data</li>
+      <li><Strong> 1year_data.ipynb - </Strong> used to extract 1 year data for training</li>
+      <li><Strong> 4months_data.ipynb - </Strong> used to extract 4 months data for analysis</li>
+      <li><Strong> data analysis.ipynb - </Strong> used for data analysis</li>
+      <li><Strong> title.ipynb - </Strong> NLP only on title column of 1 year data </li>
+     <li><Strong> title+body.ipynb - </Strong> NLP  on body+title columns of 1 year data </li>
+     
+   </ol> </li> <br>
+ 
+ 
+ <li> <Strong> website </Strong> <br>
+  Contains the full website that has been hosted on heroku - https://flairofreddit.herokuapp.com
+    <ol>
+      <li><Strong> model - </Strong> finally used model for flair prediction </li>
+      <li><Strong> static - </Strong> contains images of data analysis</li>
+      <li><Strong> templates - </Strong> contains .html file</li>
+      <li><Strong> venv - </Strong> for creating virtual env named "venv"</li>
+      <li><Strong> Procfile - </Strong> so heroku can detect that it's an app</li>
+      <li><Strong> app.py - </Strong> for setting up flask (backend) </li>
+      <li><Strong> requirements.txt - </Strong> contains names of all the dependencies required to rub the app</li>
+     
+   </ol> </li> <br>
+   
+ <li> <Strong> README.md </Strong></li>
+</ul>
+
+
+
+
+
